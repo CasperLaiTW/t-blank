@@ -6,7 +6,7 @@ class TBlank {
       this.device = this.getDevice();
 
       if (this.device == 'other') {
-        self = this
+        let self = this
         this.aList.forEach(function (item) {
           let url = item.getAttribute("href")
           if (!self.isInternalLink(url)) {
