@@ -43,7 +43,7 @@ class TBlank {
   replace(val) {
     if (this.device == 'other') {
       let a = val.match(/<a(.|\s)*?>/gi)
-      self = this
+      let self = this
       if (a !== null) {
         a.forEach(v => {
           let x = v.match(/href="([^\"]+)"/)
